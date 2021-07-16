@@ -1,5 +1,9 @@
-# Open Cypress - Production
-`node_modules/.bin/cypress open`
+# Open Cypress launcher to run individual tests
+`cd frontend`
+Against production: `npm run cypress:open-production`
+Against staging: `npm run cypress:open-staging`
 
-# Open Cypress - Staging
-`node_modules/.bin/cypress open --config-file cypress-staging.json`
+# Run Cypress tests in the background and upload results to https://dashboard.cypress.io/
+`cd frontend`
+Against production: `npm run cypress:run-production`
+Against staging: `npm run cypress:run-staging`
