@@ -8,7 +8,7 @@ describe('BPAC Page', () => {
   if ( !Cypress.env('isStaging') ) {
     it('has the correct sidebar', () => {
       cy.get('#sidebar').find('#nextendaccordionmenuwidget-2').find('.heading').contains('Development & Public Works')
-      cy.get('#sidebar').find('#nextend-accordion-menu-nextendaccordionmenuwidget-2').find('dt.level1').its('length').should('eq', 8)
+      cy.get('#sidebar').find('#nextend-accordion-menu-nextendaccordionmenuwidget-2').find('dt.level1').its('length').should('eq', 12)
     })
   }
 })
